@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useApi } from "../../context/apiEfemerides.jsx";
 import { Link } from "react-router-dom";
 const Header = () => {
-  const { statusSv } = useApi();
+  const { statusSv, loading } = useApi();
   const [svOnline, setSvOnline] = useState(false);
   const [mobile, setMobile] = useState(false);
 
@@ -55,10 +55,14 @@ const Header = () => {
           server{" "}
           <span
             className={`${
-              svOnline ? "text-green-600" : "text-red-600"
+              loading
+                ? "text-white"
+                : svOnline
+                ? "text-green-600"
+                : "text-red-600"
             } font-bold`}
           >
-            {svOnline ? "online" : "offline"}
+            {loading ? "..." : svOnline ? "online" : "offline"}
           </span>
         </p>
       </div>

@@ -5,6 +5,7 @@ import "./index.css";
 import ApiContextProvider from "./context/apiEfemerides.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
+import About from "./components/About/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       {
         path: "/about",
-        element: <h1>About</h1>,
+        element: <About />,
       },
     ],
   },
