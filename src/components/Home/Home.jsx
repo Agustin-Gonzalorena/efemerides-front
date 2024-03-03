@@ -11,13 +11,13 @@ const Home = () => {
   }, [statusSv]);
 
   return (
-    <div className="h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-20">
+    <div className="min-h-[calc(90vh-80px)] flex flex-col justify-center items-center gap-20 mt-10 mb-10 md:mt-0 md:mb-0">
       <h1 className="md:text-7xl text-5xl text-center font-bold">
         ¿Que paso un dia como hoy?
       </h1>
       {!loading ? (
         <div
-          className={`flex min-h-60 w-8/12 border rounded-3xl p-10 items-center ${
+          className={`flex min-h-60 w-10/12 md:w-8/12 border rounded-3xl p-14 pb-10 md:p-10 items-center ${
             efemeride != "" ? "border-green-400" : "border-red-500"
           }`}
         >
@@ -31,7 +31,10 @@ const Home = () => {
               </NavLink>
             </div>
           ) : (
-            <p>{efemeride}</p>
+            <div>
+              <p>{efemeride}</p>
+              <p className="text-end font-thin mt-5">OpenAI</p>
+            </div>
           )}
         </div>
       ) : (

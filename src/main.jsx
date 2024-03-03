@@ -6,7 +6,12 @@ import ApiContextProvider from "./context/apiEfemerides.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
 import About from "./components/About/About.jsx";
-
+import "@fontsource/roboto/100.css";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/900.css";
 const router = createBrowserRouter([
   {
     path: "/",

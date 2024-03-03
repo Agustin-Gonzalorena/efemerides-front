@@ -11,3 +11,6 @@ html {
   background-color: #242424;
   color: #fff;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
