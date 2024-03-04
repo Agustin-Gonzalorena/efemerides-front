@@ -26,6 +26,7 @@ const Footer = () => {
         </p>
         <a
           href="https://github.com/Agustin-Gonzalorena"
+          title="mi github"
           target="_blank"
           rel="noopener noreferrer"
           className="active:scale-[0.9] hover:underline hover:text-white transition-all"
