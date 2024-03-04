@@ -17,12 +17,22 @@ const Footer = () => {
           className="h-14 border-white border-2 rounded-full"
         />
       </a>
-      <Link to="/about" className="text-white underline">
+      <Link to="/about" className="text-white hover:underline transition-all ">
         <p>Conocer el proyecto</p>
       </Link>
-      <p className="text-white text-center pt-5">
-        © {date} - Todos los derechos reservados.
-      </p>
+      <div className="flex items-center gap-2 md:gap-5 flex-col md:flex-row text-xs">
+        <p className="text-white text-center">
+          © {date} - Todos los derechos reservados.
+        </p>
+        <a
+          href="https://github.com/Agustin-Gonzalorena"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="active:scale-[0.9] hover:underline hover:text-white transition-all"
+        >
+          <p>By Agustin Gonzalorena</p>
+        </a>
+      </div>
     </div>
   );
 };

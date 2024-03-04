@@ -11,7 +11,7 @@ const Home = () => {
   }, [statusSv]);
 
   return (
-    <div className="min-h-[calc(90vh-80px)] flex flex-col justify-center items-center gap-20 mt-10 mb-10 md:mt-0 md:mb-0">
+    <div className="min-h-[calc(90vh-80px)] flex flex-col justify-center items-center gap-14 md:pt-10 md:pb-10  mt-10 mb-10 md:mt-0 md:mb-0">
       <h1 className="md:text-7xl text-5xl text-center font-bold">
         ¿Que paso un dia como hoy?
       </h1>
