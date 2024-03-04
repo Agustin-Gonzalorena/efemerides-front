@@ -45,6 +45,7 @@ const Home = () => {
           href={`https://www.google.com/search?q=${efemeride}`}
           target="_blank"
           rel="noopener noreferrer"
+          title="mas informacion"
           className="border p-2 border-white rounded-2xl shadow-black shadow-lg transition-all active:scale-[0.9] hover:border-black hover:text-black hover:bg-white"
         >
           Mas informacion

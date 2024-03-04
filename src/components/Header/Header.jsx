@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className="h-16 border-b-2 border-white flex justify-center items-center text-white">
       <div className="w-9/12 flex justify-between items-center ">
-        <Link to="/" style={{ width: "33%" }}>
+        <Link to="/" title="home" style={{ width: "33%" }}>
           <p style={{ fontSize: "30px" }}>EFEMERIDES</p>
         </Link>
         {mobile ? null : (
@@ -42,10 +42,10 @@ const Header = () => {
                 gap: "30px",
               }}
             >
-              <Link to="/">
+              <Link to="/" title="home">
                 <li>Home</li>
               </Link>
-              <Link to="/about">
+              <Link to="/about" title="about">
                 <li>About</li>
               </Link>
             </ul>

@@ -10,14 +10,18 @@ const Footer = () => {
   }, []);
   return (
     <div className="bg-black min-h-28 flex flex-col items-center p-4 gap-5">
-      <a href="/">
+      <a href="/" title="home">
         <img
           src="/vite.svg"
           alt="home"
           className="h-14 border-white border-2 rounded-full"
         />
       </a>
-      <Link to="/about" className="text-white hover:underline transition-all ">
+      <Link
+        to="/about"
+        title="about"
+        className="text-white hover:underline transition-all "
+      >
         <p>Conocer el proyecto</p>
       </Link>
       <div className="flex items-center gap-2 md:gap-5 flex-col md:flex-row text-xs">
