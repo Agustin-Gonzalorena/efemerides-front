@@ -20,22 +20,17 @@ const ApiContextProvider = ({ children }) => {
   const [statusSv, setStatusSv] = useState(".");
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    try {
-      fetch(urlApi, options)
-        .then((res) => res.json())
-        .then((res) => {
-          setStatusSv(res.fact);
-          setLoading(false);
-        })
-        .catch((err) => {
-          setStatusSv("");
-          setLoading(false);
-          console.log(err);
-        });
-    } catch (error) {
-      console.error("Error en el fetch", error);
-      return;
-    }
+    fetch(urlApi, options)
+      .then((res) => res.json())
+      .then((res) => {
+        setStatusSv(res.fact);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setStatusSv("");
+        setLoading(false);
+        console.log(err);
+      });
   }, []);
 
   return <api.Provider value={{ statusSv, loading }}>{children}</api.Provider>;
