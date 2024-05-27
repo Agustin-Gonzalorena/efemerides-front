@@ -33,7 +33,7 @@ const Home = () => {
           ) : (
             <div>
               <p>{efemeride}</p>
-              <p className="text-end font-thin mt-5">OpenAI</p>
+              <p className="text-end font-thin mt-5">Gemini</p>
             </div>
           )}
         </div>
