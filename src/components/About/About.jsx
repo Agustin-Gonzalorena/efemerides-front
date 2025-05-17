@@ -9,19 +9,18 @@ const About = () => {
           Esta página web es un proyecto en desarrollo, donde estoy explorando
           el fascinante mundo de los servidores y la programación web. En este
           espacio, estoy experimentando con la conexión a un{" "}
-          <strong>servidor local </strong>
-          alojado en una vieja laptop, que se ha configurado como una forma de
-          aprendizaje y exploración personal.
+          <strong>servidor local</strong> que se ha configurado como una forma
+          de aprendizaje y exploración personal.
         </p>
         <p>
           El objetivo principal de este proyecto es aprender sobre el
           funcionamiento de los
           <strong className="font-semibold"> servidores</strong> y cómo
           interactúan con las aplicaciones web. Para ello, he diseñado una API
-          sencilla con Node.js en el servidor que permite realizar una solicitud
-          diaria a la API de OpenAI. Esta solicitud busca obtener la efeméride
-          del día, proporcionando así información relevante y curiosa para los
-          usuarios que visitan la página.
+          sencilla con Spring Boot en el servidor que permite realizar una
+          solicitud diaria a la API de Gemini. Esta solicitud busca obtener la
+          efeméride del día, proporcionando así información relevante y curiosa
+          para los usuarios que visitan la página.
         </p>
         <p>
           Es importante destacar que esta página está en{" "}
