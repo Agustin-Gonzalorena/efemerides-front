@@ -23,7 +23,7 @@ const ApiContextProvider = ({ children }) => {
     fetch(urlApi, options)
       .then((res) => res.json())
       .then((res) => {
-        setStatusSv(res.fact);
+        setStatusSv(res.results.text);
         setLoading(false);
       })
       .catch((err) => {
